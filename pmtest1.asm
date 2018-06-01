@@ -1,6 +1,6 @@
 %include "pm.inc"
 
-org 07c00h
+org 0100h
     jmp LABEL_BEGIN
 
 [SECTION .gdt]
