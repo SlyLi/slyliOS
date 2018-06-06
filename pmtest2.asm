@@ -317,7 +317,7 @@ LABEL_SEG_CODE16:
 	mov	gs, ax
 	mov	ss, ax
 
-	mov	eax, cr0
+	mov	eax, cr0 
 	and	al, 11111110b
 	mov	cr0, eax
 
