@@ -1,17 +1,25 @@
-megs:32
+###############################################################
+# Configuration file for Bochs
+###############################################################
 
+# how much memory the emulated machine will have
+megs: 32
+
+# filename of ROM images
 romimage:file=/usr/local/share/bochs/BIOS-bochs-latest
-
 vgaromimage:file=/usr/share/vgabios/vgabios.bin
 
-floppya:1_44=a.img,status=inserted
+# what disk images will be used
+floppya: 1_44=a.img, status=inserted
 
-boot:a
+# choose the boot disk.
+boot: a
 
-log:bochsout.txt
+# where do we send log messages?
+# log: bochsout.txt
 
-mouse:enabled=0
+# disable the mouse
+mouse: enabled=0
 
+# enable key mapping, using US layout as default.
 keyboard:keymap=/usr/local/share/bochs/keymaps/x11-pc-us.map
-
-
